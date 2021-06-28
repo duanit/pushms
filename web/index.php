@@ -5,23 +5,41 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+  <script src="js/bootstrap-datetimepicker.min.js"></script>
+  <script>
+    $("#datetime").datetimepicker({
+        format: 'yyyy-mm-dd hh:ii'
+    });
+</script>
 </head>
 <body>
   <div style="margin:100px;">
     <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container">
-    <a class="navbar-brand" href="/">Setting Send Message</a>
+    <a class="navbar-brand" href="/">Express  PHP</a>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="/sitemap">Sitemap</a>
+      </li>
+    </ul>
   </div>
 </nav>
     <div class="jumbotron"  style="padding:40px;">
-     <form action="/file.php">
+     <form action="/action_page.php">
   <div class="form-group">
     <label for="email">Email address:</label>
     <input type="email" class="form-control" id="email">
   </div>
   <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
+    <label for="pwd">Time</label>
+    <input type="text" id="datetime" readonly>
   </div>
   <div class="checkbox">
     <label><input type="checkbox"> Remember me</label>
