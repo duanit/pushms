@@ -11,22 +11,7 @@
 </head>
 <body>
   <div style="margin:100px;">
-    <nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container">
-    <a class="navbar-brand" href="/">Express  PHP</a>
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/about">About</a>
-      </li>
-      <li>
-        <a href="/sitemap">Sitemap</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    
     <div class="jumbotron"  style="padding:40px;">
      <form action="/action_page.php">
   <div class="form-group">
