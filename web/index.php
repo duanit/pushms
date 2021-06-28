@@ -7,11 +7,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
   <script src="js/bootstrap-datetimepicker.min.js"></script>
-  <script>
-    $("#datetime").datetimepicker({
-        format: 'yyyy-mm-dd hh:ii'
-    });
-</script>
+
 </head>
 <body>
   <div style="margin:100px;">
@@ -39,7 +35,8 @@
   </div>
   <div class="form-group">
     <label for="pwd">Time</label>
-    <input type="text" id="datetime" readonly>
+   <label for="birthdaytime">Birthday (date and time):</label>
+<input type="datetime-local" id="birthdaytime" name="birthdaytime">
   </div>
   <div class="checkbox">
     <label><input type="checkbox"> Remember me</label>
